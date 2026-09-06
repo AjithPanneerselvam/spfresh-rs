@@ -7,9 +7,10 @@
 Requires [SPFresh](https://github.com/SPFresh/SPFresh) and the [PtilopsisL/rocksdb](https://github.com/PtilopsisL/rocksdb) fork built and installed.
 
 ```bash
+# Edit .env with your paths
 cp .env.example .env
-# edit .env with your paths
 
+# Build
 just build
 ```
 
@@ -18,6 +19,7 @@ Or with Cargo directly:
 ```bash
 export SPFRESH_ROOT=/path/to/SPFresh
 export ROCKSDB_ROOT=/path/to/rocksdb-install
+
 cargo build
 ```
 
