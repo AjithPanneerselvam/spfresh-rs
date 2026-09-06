@@ -1,6 +1,25 @@
 # spfresh-rs
 
-`spfresh-rs` provides Rust bindings for the C++ [SPFresh](https://github.com/SPFresh/SPFresh) library, the implementation of [“SPFresh: Incremental In-Place Update for Billion-Scale Vector Search”](https://arxiv.org/abs/2410.14452).
+`spfresh-rs` provides Rust bindings for the C++ [SPFresh](https://github.com/SPFresh/SPFresh) library, the implementation of [SPFresh: Incremental In-Place Update for Billion-Scale Vector Search](https://arxiv.org/abs/2410.14452).
+
+## Build
+
+Requires [SPFresh](https://github.com/SPFresh/SPFresh) and the [PtilopsisL/rocksdb](https://github.com/PtilopsisL/rocksdb) fork built and installed.
+
+```bash
+cp .env.example .env
+# edit .env with your paths
+
+just build
+```
+
+Or with Cargo directly:
+
+```bash
+export SPFRESH_ROOT=/path/to/SPFresh
+export ROCKSDB_ROOT=/path/to/rocksdb-install
+cargo build
+```
 
 ## Roadmap
 
