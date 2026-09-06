@@ -4,4 +4,4 @@
 *.swo
 *~
 .DS_Store
-.env
+.env.fish
